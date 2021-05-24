@@ -908,7 +908,7 @@ function Generate {
     $FirstInitial = $Fname
     $Extract = $FirstInitial.SubString(0,1).ToLower()
     $smtplname = $Lname.ToLower()
-    $proxyAddress = @{proxyAddresses = ("SMTP:" + $Extract + "." + $smtplname + "@embelton.com"), ("smtp:" + $Extract + "." + $smtplname + "@embelton.com.au")}
+    $proxyAddress = @{proxyAddresses = ("SMTP:" + $Extract + "." + $smtplname + "@domain.com"), ("smtp:" + $Extract + "." + $smtplname + "@domain.com.au")}
     $samaccountname = "$Extract.$Lname"
 
     # c is the 2 char country as per ISO-3166, co = country spelled out, countryCode integer designation the language ISO-3166
@@ -931,7 +931,7 @@ function BranchPopulate {
         $Statebox.Text = 'Victoria'
         $City.Text = 'Coburg'
         $PCode.Text = '3058'
-        $Street.Text = '147 Bakers Road'
+        $Street.Text = 'xx Bakers Road'
     }
     elseif ($branchBox.SelectedItem -eq 'Brisbane')
     {
@@ -939,7 +939,7 @@ function BranchPopulate {
         $Statebox.Text = 'Queensland'
         $City.Text = 'Eagle Farm'
         $PCode.Text = '4009'
-        $Street.Text = '361 Fison Avenue East'
+        $Street.Text = 'xx Fison Avenue East'
     }
     elseif ($branchBox.SelectedItem -eq 'Sydney')
     {
@@ -947,7 +947,7 @@ function BranchPopulate {
         $Statebox.Text = 'NSW'
         $City.Text = 'Wetherill Park'
         $PCode.Text = '2164'
-        $Street.Text = '50 Newton Road'
+        $Street.Text = 'xx Newton Road'
     }
     elseif ($branchBox.SelectedItem -eq 'Huntingdale')
     {
@@ -955,7 +955,7 @@ function BranchPopulate {
         $Statebox.Text = 'Victoria'
         $City.Text = 'Melbourne'
         $PCode.Text = '3166'
-        $Street.Text = '72 Fenton St'
+        $Street.Text = 'xx Fenton St'
     }
     elseif ($branchBox.SelectedItem -eq 'Perth')
     {
@@ -963,7 +963,7 @@ function BranchPopulate {
         $Statebox.Text = 'WA'
         $City.Text = 'Osborne Park'
         $PCode.Text = '6017'
-        $Street.Text = '21 Pearson Way'
+        $Street.Text = 'xx Pearson Way'
     }
 }
 
